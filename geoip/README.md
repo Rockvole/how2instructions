@@ -7,6 +7,10 @@ sudo chmod o+w /usr/share/GeoIP/
 ./geoip_update.sh
 crontab cron-job.txt
 ```
+#### Install mod_geoip to apache
+```
+sudo apt-get install libapache2-mod-geoip
+```
 #### Block countries
 Add to .htaccess in your www directory
 ```
@@ -18,4 +22,5 @@ Add to .htaccess in your www directory
   Deny from env=BlockCountry
 </IfModule>
 ```
-<a href='http://dev.maxmind.com/geoip/legacy/codes/iso3166/'>List of Country Codes</a>
+<a href='http://dev.maxmind.com/geoip/legacy/codes/iso3166/'>List of Country Codes</a><br/>
+<i>Test the changes by blocking your own country and going to your website</i>
