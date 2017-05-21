@@ -11,10 +11,6 @@ crontab cron-job.txt
 ```
 sudo apt-get install libapache2-mod-geoip
 ```
-#### Install pygeoip to python
-```
-sudo pip install pygeoip
-```
 #### Block countries
 Add to .htaccess in your www directory
 ```
